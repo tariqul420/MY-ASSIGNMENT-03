@@ -6,7 +6,11 @@
     transform: rotate(-45deg)
 }
 
-@layer {
+@layer  components{
+    .dark{
+
+    }
+
     .display-none {
         @apply hidden;
     }
@@ -29,5 +33,9 @@
 
     .paragraph {
         @apply text-paragraph-1 font-medium text-center dark:text-paragraph-d;
+    }
+
+    .button {
+        @apply text-heading font-bold rounded-full p-[8px_16px] bg-white;
     }
 }
