@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.arrow {
+    transform: rotate(-45deg)
+}
+
+@layer {
+    .display-none {
+        @apply hidden;
+    }
+
+    #theme-switch {
+        @apply h-[50px] w-[50px] p-0 justify-center items-center flex;
+    }
+
+    .arrow {
+        @apply bg-green rounded-full p-[10px];
+    }
+
+    .icon {
+        @apply p-3 rounded-full bg-white;
+    }
+
+    .heading {
+        @apply text-heading text-center text-3xl !font-extrabold dark:text-heading-d;
+    }
+
+    .paragraph {
+        @apply text-paragraph-1 font-medium text-center dark:text-paragraph-d;
+    }
+}
