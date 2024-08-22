@@ -7,10 +7,6 @@
 }
 
 @layer  components{
-    .dark{
-
-    }
-
     .display-none {
         @apply hidden;
     }
