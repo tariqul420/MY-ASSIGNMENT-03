@@ -16,6 +16,9 @@ module.exports = {
         "paragraph-2": "#737373",
         "paragraph-d": "#ffffffa6",
       },
+      aspectRatio: {
+        'img': '9 / 5',
+      },
     },
   },
   plugins: [
