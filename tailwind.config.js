@@ -7,8 +7,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        green: "#ABEF5F",
-        heading: "#212121",
+        "green": "#ABEF5F",
+        "heading": "#212121",
         "heading-2": "#494949",
         "heading-d": "#fff",
         "paragraph-1": "#494949",
@@ -16,7 +16,7 @@ module.exports = {
         "paragraph-d": "#ffffffa6",
       },
       backgroundImage: {
-        connect: "url('/assets/bg.jpg')",
+        "connect": "url('/assets/bg.jpg')",
       },
     },
   },

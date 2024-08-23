@@ -35,10 +35,11 @@
         @apply text-heading font-bold rounded-full p-[8px_16px] bg-white;
     }
 
-    .input-text{
+    .input-text {
         @apply input md:w-[20.5rem] lg:w-[29.5rem] rounded-full focus:outline-none max-sm:col-span-2 font-bold placeholder:font-bold;
     }
-    .textarea-text{
+
+    .textarea-text {
         @apply textarea h-60 resize-none col-span-2 rounded-2xl p-5 focus:outline-none font-bold placeholder:font-bold;
     }
 }
