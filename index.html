@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="src/output.css" />
     <link rel="stylesheet" href="src/style.css" />
   </head>
-  <body class="font-manrope box-border scroll-smooth max-w-[90rem] mx-auto dark:bg-gradient-to-tr from-[#0f1729] via-[#15314c] to-[#0f1729]">
+  <body class="font-manrope box-border max-w-[90rem] mx-auto dark:bg-gradient-to-tr from-[#0f1729] via-[#15314c] to-[#0f1729]">
     <!-- todo Header section start hear -->
     <header class="bg-gray-100 dark:bg-transparent pb-20">
       <!-- done nav bar start hear -->
@@ -27,10 +27,10 @@
 
         <div class="space-x-4 hidden lg:block">
           <a href="#" class="text-heading font-bold dark:text-heading-d">Home</a>
-          <a href="#" class="text-paragraph-2 font-bold dark:text-paragraph-d">Services</a>
-          <a href="#" class="text-paragraph-2 font-bold dark:text-paragraph-d">Portfolio</a>
-          <a href="#" class="text-paragraph-2 font-bold dark:text-paragraph-d">Blogs</a>
-          <a href="#" class="text-paragraph-2 font-bold dark:text-paragraph-d">Contact Us</a>
+          <a href="#sarvise" class="text-paragraph-2 font-bold dark:text-paragraph-d">Services</a>
+          <a href="#portfolio" class="text-paragraph-2 font-bold dark:text-paragraph-d">Portfolio</a>
+          <a href="#blog" class="text-paragraph-2 font-bold dark:text-paragraph-d">Blogs</a>
+          <a href="#contact" class="text-paragraph-2 font-bold dark:text-paragraph-d">Contact Us</a>
         </div>
 
         <div class="flex items-center gap-4">
@@ -63,21 +63,21 @@
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden bg-white rounded-full text-lg">
               <i class="fa-solid fa-bars"></i>
             </div>
-            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 right-0 p-2 shadow text-lg font-medium gap-5">
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 right-0 p-2 shadow text-lg font-medium gap-5 dark:bg-[#15314c]">
               <li class="hover:text-primary transition-colors ease-in-out duration-300">
                 <a href="#" class="text-heading font-bold dark:text-heading-d">Home</a>
               </li>
               <li class="hover:text-primary transition-colors ease-in-out duration-300">
-                <a href="#" class="text-paragraph-2 font-bold dark:text-paragraph-d">Services</a>
+                <a href="#sarvise" class="text-paragraph-2 font-bold dark:text-paragraph-d">Services</a>
               </li>
               <li class="hover:text-primary transition-colors ease-in-out duration-300">
-                <a href="#" class="text-paragraph-2 font-bold dark:text-paragraph-d">Portfolio</a>
+                <a href="#portfolio" class="text-paragraph-2 font-bold dark:text-paragraph-d">Portfolio</a>
               </li>
               <li class="hover:text-primary transition-colors ease-in-out duration-300">
-                <a href="#" class="text-paragraph-2 font-bold dark:text-paragraph-d">Blogs</a>
+                <a href="#blog" class="text-paragraph-2 font-bold dark:text-paragraph-d">Blogs</a>
               </li>
               <li class="hover:text-primary transition-colors ease-in-out duration-300">
-                <a href="#" class="text-paragraph-2 font-bold dark:text-paragraph-d">Contact Us</a>
+                <a href="#contact" class="text-paragraph-2 font-bold dark:text-paragraph-d">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -172,7 +172,7 @@
         <button>
           <a href="#" class="button"><i class="fa-solid fa-arrow-right"></i> How to works</a>
         </button>
-        <h2 class="heading">We design thoughtful, liveable spaces</h2>
+        <h2 class="heading">Our Works Process</h2>
         <p class="paragraph">
           The barn house captivates with its blend of rustic charm and modern sophistication, <br class="max-sm:hidden" />
           featuring weathered wood, sleek metal accents.
@@ -206,11 +206,11 @@
       </section>
 
       <!-- done Explore our Latest works section start hear -->
-      <section class="flex flex-col items-center space-y-8 dark:bg-transparent my-[6.25rem]">
+      <section class="flex flex-col items-center space-y-8 dark:bg-transparent my-[6.25rem]" id="portfolio">
         <button>
           <a href="#" class="button bg-green/50"><i class="fa-solid fa-arrow-right"></i> Explore our Latest works</a>
         </button>
-        <h2 class="heading">We design thoughtful, liveable spaces</h2>
+        <h2 class="heading">Our Latest Portfolio</h2>
         <p class="paragraph">
           The barn house captivates with its blend of rustic charm and modern sophistication, <br class="max-sm:hidden" />
           featuring weathered wood, sleek metal accents.
@@ -221,7 +221,7 @@
             <div class="md:w-2/5">
               <img class="h-full object-contain w-full" src="assets/img1.png" alt />
             </div>
-            <div class="flex flex-col items-start justify-center space-y-3 w-3/5">
+            <div class="flex flex-col items-start justify-center space-y-3 md:flex-1 lg:w-3/5">
               <h2 class="text-heading-2 text-2xl font-bold dark:text-heading-d">Commercial</h2>
               <p class="paragraph text-paragraph-2 text-left">
                 The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .
@@ -264,7 +264,7 @@
       </section>
 
       <!-- done Our New plan section start hear -->
-      <section class="flex flex-col bg-gray-200 items-center space-y-8 dark:bg-transparent py-[6.25rem]">
+      <section class="flex flex-col bg-gray-200 items-center space-y-8 dark:bg-transparent py-[6.25rem]" id="sarvise">
         <button>
           <a href="#" class="button bg-green/50"><i class="fa-solid fa-arrow-right"></i> Explore our New Plan</a>
         </button>
@@ -316,8 +316,46 @@
         </div>
       </section>
 
+      <!-- done Extra section start hear -->
+      <section class="bg-gray-200 flex flex-col items-center justify-center space-y-8 dark:bg-transparent pt-8 pb-[6.25rem]">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-11/12 gap-5 mx-auto">
+          <div class="p-10 rounded-xl bg-[#77AAEA] space-y-4 flex flex-col items-center">
+            <img class="w-32" src="assets/loupe.png" alt />
+            <h3 class="text-heading text-xl font-bold">Free home valuation</h3>
+            <p class="paragraph text-center text-paragraph-1 dark:text-paragraph-2">Find out how much your home's worth form an expert.</p>
+            <button>
+              <a href="#" class="text-heading font-bold hover:underline under underline-offset-8 text-lg dark:text-heading-d"
+                >Get free agent valuation <i class="fa-solid fa-arrow-right arrow bg-aqua-marine text-white p-[5px]"></i
+              ></a>
+            </button>
+          </div>
+
+          <div class="p-10 rounded-xl bg-[#e6ef6e] space-y-4 flex flex-col items-center">
+            <img class="w-32" src="assets/building.png" alt />
+            <h3 class="text-heading text-xl font-bold">Commercial property</h3>
+            <p class="paragraph text-center text-paragraph-1 dark:text-paragraph-2">Search free hold and leasehold commercial property in the UK.</p>
+            <button>
+              <a href="#" class="text-heading font-bold hover:underline under underline-offset-8 text-lg dark:text-heading-d"
+                >Search Now <i class="fa-solid fa-arrow-right arrow bg-aqua-marine text-white p-[5px]"></i
+              ></a>
+            </button>
+          </div>
+
+          <div class="p-6 rounded-xl bg-[#eb87e6] space-y-4 flex flex-col items-center md:col-span-2 lg:col-span-1">
+            <img class="w-32" src="assets/idea.png" alt />
+            <h3 class="text-heading text-xl font-bold">Energy efficiency</h3>
+            <p class="paragraph text-center text-paragraph-1 dark:text-paragraph-2">Check a home's energy rating and find out how to improve it.</p>
+            <button>
+              <a href="#" class="text-heading font-bold hover:underline under underline-offset-8 text-lg dark:text-heading-d"
+                >Find out more <i class="fa-solid fa-arrow-right arrow bg-aqua-marine text-white p-[5px]"></i
+              ></a>
+            </button>
+          </div>
+        </div>
+      </section>
+
       <!-- done Rinterio News section start hear -->
-      <section class="flex flex-col items-center bg-gray-200 space-y-8 dark:bg-transparent py-[6.25rem]">
+      <section class="flex flex-col items-center bg-gray-200 space-y-8 dark:bg-transparent py-[6.25rem]" id="blog">
         <button>
           <a href="#" class="button bg-green/50"><i class="fa-solid fa-arrow-right"></i> Rinterio News</a>
         </button>
@@ -382,7 +420,7 @@
       </section>
 
       <!-- done Let’s Connect section start hear -->
-      <section class="flex flex-col items-center background space-y-8 py-[6.25rem] dark:bg-none">
+      <section class="flex flex-col items-center background space-y-8 py-[6.25rem] dark:bg-none" id="contact">
         <button>
           <a href="#" class="button bg-green/50"><i class="fa-solid fa-arrow-right"></i> Let’s Connect</a>
         </button>
@@ -414,12 +452,12 @@
         The barn house captivates with its blend of rustic charm and modern sophistication, <br class="max-sm:hidden" />
         featuring weathered wood, sleek metal accents.
       </p>
-      <ul class="text-heading-d font-medium flex gap-4 sm:gap-20 lg:gap-32 mt-12">
+      <ul class="text-heading-d font-medium flex gap-2 sm:gap-20 lg:gap-32 mt-12">
         <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Blogs</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="#sarvise">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#blog">Blogs</a></li>
+        <li><a href="#contact">Contact Us</a></li>
       </ul>
 
       <button class="mt-16">

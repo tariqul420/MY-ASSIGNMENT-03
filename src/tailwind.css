@@ -5,8 +5,9 @@
 .arrow {
     transform: rotate(-45deg)
 }
+
 /* ! tailwind css not support background img on github.io so I used vanilla css */
-.background{
+.background {
     background: url(../assets/bg.jpg);
 }
 
