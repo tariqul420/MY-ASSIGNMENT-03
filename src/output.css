@@ -1988,12 +1988,36 @@ html {
   height: 100%;
 }
 
-.w-11\/12 {
-  width: 91.666667%;
+.h-\[\] {
+  height: ;
 }
 
-.w-2\/5 {
-  width: 40%;
+.h-\[20\] {
+  height: 20;
+}
+
+.h-\[20rem\] {
+  height: 20rem;
+}
+
+.h-\[rem\] {
+  height: rem;
+}
+
+.h-\[15rem\] {
+  height: 15rem;
+}
+
+.h-\[12rem\] {
+  height: 12rem;
+}
+
+.h-\[17rem\] {
+  height: 17rem;
+}
+
+.w-11\/12 {
+  width: 91.666667%;
 }
 
 .w-3\/5 {
@@ -2006,6 +2030,10 @@ html {
 
 .w-full {
   width: 100%;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .max-w-\[48rem\] {
@@ -2034,10 +2062,6 @@ html {
 
 .grid-cols-8 {
   grid-template-columns: repeat(8, minmax(0, 1fr));
-}
-
-.grid-rows-1 {
-  grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -2102,6 +2126,12 @@ html {
   margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
 .space-y-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
@@ -2126,22 +2156,16 @@ html {
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
-.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+.space-y-9 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
-  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+  margin-top: calc(2.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.25rem * var(--tw-space-y-reverse));
 }
 
 .space-y-5 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
-}
-
-.space-y-9 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(2.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2.25rem * var(--tw-space-y-reverse));
 }
 
 .scroll-smooth {
@@ -2238,10 +2262,6 @@ html {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-connect {
-  background-image: url('/assets/bg.jpg');
 }
 
 .from-\[\#0f1729\] {
@@ -2425,6 +2445,12 @@ html {
   transform: rotate(-45deg)
 }
 
+/* ! tailwind css not support background img on github.io so I used vanilla css */
+
+.background{
+  background: url(../assets/bg.jpg);
+}
+
 .hover\:text-primary:hover {
   --tw-text-opacity: 1;
   color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity)));
@@ -2455,9 +2481,19 @@ html {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.dark\:text-heading:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(33 33 33 / var(--tw-text-opacity));
+}
+
 .dark\:text-heading-d:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.dark\:text-paragraph-1:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(73 73 73 / var(--tw-text-opacity));
 }
 
 .dark\:text-paragraph-2:is(.dark *) {
@@ -2467,16 +2503,6 @@ html {
 
 .dark\:text-paragraph-d:is(.dark *) {
   color: #ffffffa6;
-}
-
-.dark\:text-heading:is(.dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(33 33 33 / var(--tw-text-opacity));
-}
-
-.dark\:text-paragraph-1:is(.dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(73 73 73 / var(--tw-text-opacity));
 }
 
 @media not all and (min-width: 640px) {
@@ -2504,26 +2530,40 @@ html {
     display: flex;
   }
 
+  .md\:aspect-video {
+    aspect-ratio: 16 / 9;
+  }
+
+  .md\:h-\[17rem\] {
+    height: 17rem;
+  }
+
+  .md\:h-\[16rem\] {
+    height: 16rem;
+  }
+
+  .md\:h-\[15rem\] {
+    height: 15rem;
+  }
+
+  .md\:w-2\/5 {
+    width: 40%;
+  }
+
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:w-full {
+    width: 100%;
   }
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:grid-rows-2 {
-    grid-template-rows: repeat(2, minmax(0, 1fr));
-  }
-
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
   .md\:space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2554,20 +2594,40 @@ html {
     display: block;
   }
 
-  .lg\:grid {
-    display: grid;
-  }
-
   .lg\:hidden {
     display: none;
   }
 
-  .lg\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  .lg\:h-auto {
+    height: auto;
   }
 
-  .lg\:grid-rows-4 {
-    grid-template-rows: repeat(4, minmax(0, 1fr));
+  .lg\:h-full {
+    height: 100%;
+  }
+
+  .lg\:h-\[12\] {
+    height: 12;
+  }
+
+  .lg\:h-\[12rem\] {
+    height: 12rem;
+  }
+
+  .lg\:h-\[13rem\] {
+    height: 13rem;
+  }
+
+  .lg\:h-\[rem\] {
+    height: rem;
+  }
+
+  .lg\:h-\[12\.3rem\] {
+    height: 12.3rem;
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
@@ -2590,6 +2650,11 @@ html {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .lg\:object-contain {
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 
   .lg\:text-left {
