@@ -1,283 +1,330 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- ? Font awesome cdn -->
-        <script src="https://kit.fontawesome.com/07f60ceea9.js"
-            crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ? Font awesome cdn -->
+    <script src="https://kit.fontawesome.com/07f60ceea9.js" crossorigin="anonymous"></script>
 
-        <!-- ? Google font family link -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-            rel="stylesheet" />
+    <!-- ? Google font family link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
 
-        <link rel="shortcut icon"
-            href="https://avatars.githubusercontent.com/u/53802153?v=4?s=400"
-            type="image/x-icon" />
-        <title>Programming Hero: Assignment 03</title>
-        <link rel="stylesheet" href="src/output.css" />
-        <link rel="stylesheet" href="src/style.css">
-    </head>
-    <body
-        class="font-manrope box-border scroll-smooth max-w-[90rem] mx-auto dark:bg-gradient-to-tr from-[#0f1729] via-[#15314c] to-[#0f1729]">
-        <!-- todo Header section start hear -->
-        <header class="bg-gray-100 dark:bg-transparent pb-20">
-            <!-- done nav bar start hear -->
-            <nav class="mx-auto flex items-center justify-between py-12 w-11/12">
-                <div class="">
-                    <a href="" class="text-heading font-black text-4xl dark:text-heading-d"><i class="fa-solid fa-arrow-right arrow dark:text-black"></i> Rinterio</a>
+    <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/53802153?v=4?s=400" type="image/x-icon" />
+    <title>Programming Hero: Assignment 03</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body class="font-manrope box-border scroll-smooth max-w-[90rem] mx-auto dark:bg-gradient-to-tr from-[#0f1729] via-[#15314c] to-[#0f1729]">
+    <!-- todo Header section start hear -->
+    <header class="bg-gray-100 dark:bg-transparent pb-20">
+      <!-- done nav bar start hear -->
+      <nav class="mx-auto flex items-center justify-between py-12 w-11/12">
+        <div class>
+          <a href class="text-heading font-black text-4xl dark:text-heading-d"><i class="fa-solid fa-arrow-right arrow dark:text-black"></i> Rinterio</a>
+        </div>
+
+        <div class="space-x-4 hidden lg:block">
+          <a href="#" class="text-heading font-bold dark:text-heading-d">Home</a>
+          <a href="#" class="text-paragraph-2 font-bold dark:text-paragraph-d">Services</a>
+          <a href="#" class="text-paragraph-2 font-bold dark:text-paragraph-d">Portfolio</a>
+          <a href="#" class="text-paragraph-2 font-bold dark:text-paragraph-d">Blogs</a>
+          <a href="#" class="text-paragraph-2 font-bold dark:text-paragraph-d">Contact Us</a>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <!-- ? theme change -->
+          <div class="rounded-full bg-white">
+            <button class id="theme-switch">
+              <svg class="moon cursor-pointer dark:hidden" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000">
+                <path
+                  d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"
+                />
+              </svg>
+              <svg class="sun cursor-pointer hidden dark:block" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000">
+                <path
+                  d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="max-sm:hidden space-x-3">
+            <a href="#"><i class="fa-solid fa-magnifying-glass icon"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping icon"></i></a>
+            <button>
+              <a href="#" class="text-heading font-black text-xl p-4 bg-green rounded-full">Book Consult <i class="fa-solid fa-arrow-right arrow bg-black text-white p-[5px]"></i></a>
+            </button>
+          </div>
+
+          <!-- ? dropdown menu -->
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden bg-white rounded-full text-lg">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 right-0 p-2 shadow text-lg font-medium gap-5">
+              <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                <a href="#" class="text-heading font-bold dark:text-heading-d">Home</a>
+              </li>
+              <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                <a href="#" class="text-paragraph-2 font-bold dark:text-paragraph-d">Services</a>
+              </li>
+              <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                <a href="#" class="text-paragraph-2 font-bold dark:text-paragraph-d">Portfolio</a>
+              </li>
+              <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                <a href="#" class="text-paragraph-2 font-bold dark:text-paragraph-d">Blogs</a>
+              </li>
+              <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                <a href="#" class="text-paragraph-2 font-bold dark:text-paragraph-d">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- done header section start hear -->
+      <section class="flex flex-col items-center gap-5">
+        <img src="assets/banner.png" alt />
+        <h2 class="heading text-4xl">
+          A barn house of this design has a <br class="max-sm:hidden" />
+          striking appearance
+        </h2>
+        <p class="max-w-[48rem] paragraph">
+          The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+        </p>
+        <button class="p-[12px_24px] bg-green/50 rounded-full text-xl font-extrabold text-heading dark:text-heading-d">
+          View Details <i class="fa-solid fa-arrow-right arrow dark:text-black pl-3"></i>
+        </button>
+      </section>
+    </header>
+
+    <!-- todo Main section start hear -->
+    <main>
+      <!-- done About us section start hear -->
+      <section class="bg-gray-200 py-[6.25rem] items-center relative dark:bg-transparent">
+        <img class="relative left-8 hidden lg:block" src="assets/Vector.png" alt />
+        <div class="w-11/12 mx-auto flex-col lg:flex-row flex gap-9 items-center">
+          <div class="space-y-7 flex flex-col flex-1 items-center lg:items-start">
+            <button>
+              <a href="#" class="button"><i class="fa-solid fa-arrow-right"></i> About Us</a>
+            </button>
+            <h2 class="heading lg:text-left">We design thoughtful, liveable spaces</h2>
+            <p class="paragraph lg:text-left">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+
+            <div class="grid grid-cols-2 gap-10">
+              <div class="flex items-center gap-6 p-6 bg-white rounded-xl col-span-2 md:col-span-1 lg:col-span-2">
+                <img src="assets/commercial.png" alt />
+                <div class>
+                  <h3 class="text-heading-2 text-xl font-bold">Commercial</h3>
+                  <p class="paragraph text-paragraph-2 text-left dark:text-paragraph-2">The barn house captivates with its blend of rustic charm and modern.</p>
                 </div>
+              </div>
 
-                <div class="space-x-4 hidden lg:block">
-                    <a href="#" class="text-heading font-bold dark:text-heading-d">Home</a>
-                    <a href="#" class="text-paragraph-2 font-bold dark:text-paragraph-d">Services</a>
-                    <a href="#" class="text-paragraph-2 font-bold dark:text-paragraph-d">Portfolio</a>
-                    <a href="#" class="text-paragraph-2 font-bold dark:text-paragraph-d">Blogs</a>
-                    <a href="#" class="text-paragraph-2 font-bold dark:text-paragraph-d">Contact Us</a>
+              <div class="flex items-center gap-6 p-6 bg-white rounded-xl col-span-2 md:col-span-1 lg:col-span-2">
+                <img src="assets/residential.png" alt />
+                <div class>
+                  <h3 class="text-heading-2 text-xl font-bold">Residential</h3>
+                  <p class="paragraph text-paragraph-2 text-left dark:text-paragraph-2">The barn house captivates with its blend of rustic charm and modern.</p>
                 </div>
+              </div>
+            </div>
+          </div>
 
-                <div class="flex items-center gap-4">
-                    <!-- ? theme change -->
-                    <div class="rounded-full bg-white">
-                        <button class="" id="theme-switch">
-                          <svg class="moon cursor-pointer dark:hidden" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
-                          <svg class="sun cursor-pointer hidden dark:block" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
-                        </button>
-                      </div>
+          <div class="flex-1">
+            <img src="assets/Rectangle.png" alt />
+          </div>
+        </div>
+      </section>
 
-                    <div class="max-sm:hidden space-x-3">
-                        <a href="#"><i class="fa-solid fa-magnifying-glass icon"></i></a>
-                    <a href="#"><i class="fa-solid fa-cart-shopping icon"></i></a>
-                    <button>
-                        <a href="#" class="text-heading font-black text-xl p-4 bg-green rounded-full">Book Consult <i class="fa-solid fa-arrow-right arrow bg-black text-white p-[5px]"></i></a>
-                    </button>
-                    </div>
+      <!-- done How to work section start hear -->
+      <section class="bg-gray-200 flex flex-col items-center space-y-8 dark:bg-transparent pt-8 pb-[6.25rem]">
+        <button>
+          <a href="#" class="button"><i class="fa-solid fa-arrow-right"></i> How to works</a>
+        </button>
+        <h2 class="heading">We design thoughtful, liveable spaces</h2>
+        <p class="paragraph">
+          The barn house captivates with its blend of rustic charm and modern sophistication, <br class="max-sm:hidden" />
+          featuring weathered wood, sleek metal accents.
+        </p>
 
-                    <!-- ? dropdown menu -->
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden bg-white rounded-full text-lg">
-                            <i class="fa-solid fa-bars"></i>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 right-0 p-2 shadow text-lg font-medium gap-5">
-                            <li class="hover:text-primary transition-colors ease-in-out duration-300">
-                                <a href="#" class="text-heading font-bold dark:text-heading-d">Home</a>
-                            </li>
-                            <li class="hover:text-primary transition-colors ease-in-out duration-300">
-                                <a href="#" class="text-paragraph-2 font-bold dark:text-paragraph-d">Services</a>
-                            </li>
-                            <li class="hover:text-primary transition-colors ease-in-out duration-300">
-                                <a href="#" class="text-paragraph-2 font-bold dark:text-paragraph-d">Portfolio</a>
-                            </li>
-                            <li class="hover:text-primary transition-colors ease-in-out duration-300">
-                                <a href="#" class="text-paragraph-2 font-bold dark:text-paragraph-d">Blogs</a>
-                            </li>
-                            <li class="hover:text-primary transition-colors ease-in-out duration-300">
-                                <a href="#" class="text-paragraph-2 font-bold dark:text-paragraph-d">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                </div>
-            </nav>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-11/12 gap-5">
+          <div class="p-6 rounded-xl bg-[#E78BD3] space-y-4">
+            <img src="assets/concept.png" alt />
+            <h3 class="text-heading text-xl font-bold">Concept</h3>
+            <p class="paragraph text-paragraph-1 text-left dark:text-paragraph-2">The barn house captivates with its blend of rustic charm and modern.</p>
+          </div>
 
-            <!-- done header section start hear -->
-            <section class="flex flex-col items-center gap-5">
-                <img src="assets/banner.png" alt="">
-                <h2 class="heading text-4xl">A barn house of this design has a <br class="max-sm:hidden"> striking appearance</h2>
-                <p class="max-w-[48rem] paragraph">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-                <button class="p-[12px_24px] bg-green/50 rounded-full text-xl font-extrabold text-heading dark:text-heading-d">
-                    View Details <i class="fa-solid fa-arrow-right arrow dark:text-black pl-3"></i>
-                </button>
-            </section>
-        </header>
+          <div class="p-6 rounded-xl bg-[#EFDA6E] space-y-4">
+            <img src="assets/flow-chart.png" alt />
+            <h3 class="text-heading text-xl font-bold">Design Process</h3>
+            <p class="paragraph text-paragraph-1 text-left dark:text-paragraph-2">The barn house captivates with its blend of rustic charm and modern.</p>
+          </div>
 
-        <!-- todo Main section start hear -->
-        <main>
-            <!-- done About us section start hear -->
-            <section class="bg-gray-200 py-[6.25rem] items-center relative dark:bg-transparent">
-                <img class="relative left-8 hidden lg:block" src="assets/Vector.png" alt="">
-                <div class="w-11/12 mx-auto flex-col lg:flex-row flex gap-9 items-center ">
-                    <div class="space-y-7 flex flex-col flex-1 items-center lg:items-start">
-                        <button><a href="#" class="button"><i class="fa-solid fa-arrow-right"></i> About Us</a></button>
-                        <h2 class="heading lg:text-left">We design thoughtful, liveable spaces</h2>
-                        <p class="paragraph lg:text-left">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
-    
-                        <div class="grid grid-cols-2 gap-10">
-                            <div class="flex items-center gap-6 p-6 bg-white rounded-xl col-span-2 md:col-span-1 lg:col-span-2">
-                                <img src="assets/commercial.png" alt="">
-                                <div class="">
-                                    <h3 class="text-heading-2 text-xl font-bold">Commercial</h3>
-                                    <p class="paragraph text-paragraph-2 text-left dark:text-paragraph-2">The barn house captivates with its blend of rustic charm and modern.</p>
-                                </div> 
-                            </div>
-        
-                            <div class="flex items-center gap-6 p-6 bg-white rounded-xl col-span-2 md:col-span-1 lg:col-span-2">
-                                <img src="assets/residential.png" alt="">
-                                <div class="">
-                                    <h3 class="text-heading-2 text-xl font-bold">Residential</h3>
-                                    <p class="paragraph text-paragraph-2 text-left dark:text-paragraph-2">The barn house captivates with its blend of rustic charm and modern.</p>
-                                </div> 
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="flex-1">
-                        <img src="assets/Rectangle.png" alt="">
-                    </div>
-                </div>
-            </section>
+          <div class="p-6 rounded-xl bg-[#A4DAC3] space-y-4">
+            <img src="assets/vision.png" alt />
+            <h3 class="text-heading text-xl font-bold">Supervision</h3>
+            <p class="paragraph text-paragraph-1 text-left dark:text-paragraph-2">The barn house captivates with its blend of rustic charm and modern.</p>
+          </div>
 
-            <!-- done How to work section start hear -->
-            <section class="bg-gray-200 flex flex-col items-center space-y-8 dark:bg-transparent pt-8 pb-[6.25rem]">
-                <button><a href="#" class="button"><i class="fa-solid fa-arrow-right"></i> How to works</a></button>
-                <h2 class="heading">We design thoughtful, liveable spaces</h2>
-                <p class="paragraph">The barn house captivates with its blend of rustic charm and modern sophistication, <br class="max-sm:hidden"> featuring weathered wood, sleek metal accents.</p>
+          <div class="p-6 rounded-xl bg-[#77AAEA] space-y-4">
+            <img src="assets/budget-planning.png" alt />
+            <h3 class="text-heading text-xl font-bold">Budget Planning</h3>
+            <p class="paragraph text-paragraph-1 text-left dark:text-paragraph-2">The barn house captivates with its blend of rustic charm and modern.</p>
+          </div>
+        </div>
+      </section>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-11/12 gap-5">
-                    <div class="p-6 rounded-xl bg-[#E78BD3] space-y-4">
-                        <img src="assets/concept.png" alt="">
-                        <h3 class="text-heading text-xl font-bold">Concept</h3>
-                        <p class="paragraph text-paragraph-1 text-left dark:text-paragraph-2">The barn house captivates with its blend of rustic charm and modern.</p>
-                    </div>
+      <!-- done Explore our Latest works section start hear -->
+      <section class="flex flex-col items-center space-y-8 dark:bg-transparent my-[6.25rem]">
+        <button>
+          <a href="#" class="button bg-green/50"><i class="fa-solid fa-arrow-right"></i> Explore our Latest works</a>
+        </button>
+        <h2 class="heading">We design thoughtful, liveable spaces</h2>
+        <p class="paragraph">
+          The barn house captivates with its blend of rustic charm and modern sophistication, <br class="max-sm:hidden" />
+          featuring weathered wood, sleek metal accents.
+        </p>
 
-                    <div class="p-6 rounded-xl bg-[#EFDA6E] space-y-4">
-                        <img src="assets/flow-chart.png" alt="">
-                        <h3 class="text-heading text-xl font-bold">Design Process</h3>
-                        <p class="paragraph text-paragraph-1 text-left dark:text-paragraph-2">The barn house captivates with its blend of rustic charm and modern.</p>
-                    </div>
+        <div class="grid grid-cols-8 w-11/12 gap-6">
+          <div class="rounded-2xl p-6 border border-solid border-[#E9E9E9] flex flex-col md:flex-row gap-6 col-span-8 lg:col-span-5 -order-5">
+            <div class="w-2/5">
+              <img class="h-full object-contain w-full" src="assets/img1.png" alt />
+            </div>
+            <div class="flex flex-col items-start justify-center space-y-3 w-3/5">
+              <h2 class="text-heading-2 text-2xl font-bold dark:text-heading-d">Commercial</h2>
+              <p class="paragraph text-paragraph-2 text-left">
+                The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .
+              </p>
+              <button>
+                <a href="#" class="text-heading font-black text-xl dark:text-heading-d">View Details <i class="fa-solid fa-arrow-right arrow bg-green p-[5px]"></i></a>
+              </button>
+            </div>
+          </div>
 
-                    <div class="p-6 rounded-xl bg-[#A4DAC3] space-y-4">
-                        <img src="assets/vision.png" alt="">
-                        <h3 class="text-heading text-xl font-bold">Supervision</h3>
-                        <p class="paragraph text-paragraph-1 text-left dark:text-paragraph-2">The barn house captivates with its blend of rustic charm and modern.</p>
-                    </div>
+          <div class="rounded-2xl p-6 border border-solid border-[#E9E9E9] col-span-8 lg:col-span-3 -order-4 md:col-span-4">
+            <img class="w-full h-full" src="assets/img2.png" alt />
+          </div>
 
-                    <div class="p-6 rounded-xl bg-[#77AAEA] space-y-4">
-                        <img src="assets/budget-planning.png" alt="">
-                        <h3 class="text-heading text-xl font-bold">Budget Planning</h3>
-                        <p class="paragraph text-paragraph-1 text-left dark:text-paragraph-2">The barn house captivates with its blend of rustic charm and modern.</p>
-                    </div>
-                </div>
-            </section>
+          <div class="rounded-2xl p-6 border border-solid border-[#E9E9E9] col-span-8 lg:col-span-2 order-1 md:col-span-4">
+            <img class="w-full" src="assets/img3.png" alt />
+          </div>
 
-            <!-- done Explore our Latest works section start hear -->
-            <section class="flex flex-col items-center space-y-8 dark:bg-transparent my-[6.25rem]">
-                <button><a href="#" class="button bg-green/50"><i class="fa-solid fa-arrow-right"></i> Explore our Latest works</a></button>
-                <h2 class="heading">We design thoughtful, liveable spaces</h2>
-                <p class="paragraph">The barn house captivates with its blend of rustic charm and modern sophistication, <br class="max-sm:hidden"> featuring weathered wood, sleek metal accents.</p>
+          <div class="rounded-2xl p-6 border border-solid border-[#E9E9E9] col-span-8 flex gap-6 flex-col md:flex-row lg:col-span-4">
+            <div class="flex-1">
+              <img class="h-full object-contain w-full" src="assets/img4.png" alt />
+            </div>
+            <div class="flex flex-1 flex-col items-start justify-center space-y-1">
+              <h2 class="text-heading-2 text-2xl font-bold dark:text-heading-d">Commercial</h2>
+              <p class="paragraph text-paragraph-2 text-left">The barn house captivates with its blend of rustic charm and modern.</p>
+              <button>
+                <a href="#" class="text-heading font-black text-xl dark:text-heading-d">View Details <i class="fa-solid fa-arrow-right arrow bg-green p-[5px]"></i></a>
+              </button>
+            </div>
+          </div>
 
-                <div class="grid grid-cols-8 w-11/12 gap-6">
-                    <div class="rounded-2xl p-6 border border-solid border-[#E9E9E9] flex flex-col md:flex-row gap-6 col-span-8 lg:col-span-5 -order-5">
-                        <div>
-                            <img class="md:w-[40rem] h-full object-contain w-full" src="assets/img1.png" alt="">
-                        </div>
-                        <div class="flex flex-col items-start justify-between">
-                            <h2 class="text-heading-2 text-2xl font-bold dark:text-heading-d">Commercial</h2>
-                            <p class="paragraph text-paragraph-2 text-left">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
-                            <button>
-                                <a href="#" class="text-heading font-black text-xl dark:text-heading-d">View Details <i class="fa-solid fa-arrow-right arrow bg-green p-[5px]"></i></a>
-                            </button>
-                        </div>
-                    </div>
+          <div class="rounded-2xl p-6 border border-solid border-[#E9E9E9] col-span-8 lg:col-span-2 -order-3 md:col-span-4">
+            <img class="w-full" src="assets/img5.png" alt />
+          </div>
 
-                    <div class="rounded-2xl p-6 border border-solid border-[#E9E9E9] col-span-8 lg:col-span-3 -order-4 md:col-span-4">
-                        <img class="w-full h-full" src="assets/img2.png" alt="">
-                    </div>
+          <div class="rounded-2xl p-6 border border-solid border-[#E9E9E9] col-span-8 lg:col-span-2 lg:hidden order-2 md:col-span-4">
+            <img class="w-full" src="assets/img5.png" alt />
+          </div>
+        </div>
+      </section>
 
-                    <div class="rounded-2xl p-6 border border-solid border-[#E9E9E9] col-span-8 lg:col-span-2 order-1 md:col-span-4">
-                        <img class="w-full" src="assets/img3.png" alt="">
-                    </div>
+      <!-- done Rinterio News section start hear -->
+      <section class="flex flex-col items-center bg-gray-200 space-y-8 dark:bg-transparent py-[6.25rem]">
+        <button>
+          <a href="#" class="button bg-green/50"><i class="fa-solid fa-arrow-right"></i> Rinterio News</a>
+        </button>
+        <h2 class="heading">Read Our Articles and News</h2>
+        <p class="paragraph">
+          The barn house captivates with its blend of rustic charm and modern sophistication, <br class="max-sm:hidden" />
+          featuring weathered wood, sleek metal accents.
+        </p>
 
-                    <div class="rounded-2xl p-6 border border-solid border-[#E9E9E9] col-span-8 flex gap-6 flex-col md:flex-row lg:col-span-4">
-                        <div class="">
-                            <img class="md:w-[40rem]  h-full object-contain w-full" src="assets/img4.png" alt="">
-                        </div>
-                        <div class="flex flex-col items-start justify-between">
-                            <h2 class="text-heading-2 text-2xl font-bold dark:text-heading-d">Commercial</h2>
-                            <p class="paragraph text-paragraph-2 text-left">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
-                            <button>
-                                <a href="#" class="text-heading font-black text-xl dark:text-heading-d">View Details <i class="fa-solid fa-arrow-right arrow bg-green p-[5px]"></i></a>
-                            </button>
-                        </div>
-                    </div>
+        <div class="gap-6 flex flex-col lg:flex-row w-11/12 mx-auto">
+          <div class="space-y-4 p-6 bg-white rounded-2xl md:flex gap-5 lg:flex-col dark:bg-transparent border border-solid border-[#E9E9E9]">
+            <div class>
+              <img class="w-full" src="assets/article1.png" alt />
+            </div>
+            <div class>
+              <div class="flex gap-4">
+                <p class="flex gap-2 paragraph text-paragraph-2"><img src="assets/calendar.svg" alt /> July14, 2024</p>
+                <p class="flex gap-2 paragraph text-paragraph-2"><img src="assets/account.svg" alt /> July14, 2024</p>
+              </div>
+              <h3 class="text-heading-2 dark:text-heading-d text-xl font-bold">How to choose the furniture right of your home.</h3>
+              <p class="paragraph text-left text-paragraph-2">The barn house captivates with its blend of rustic charm and modern.</p>
+              <button>
+                <a href="#" class="text-heading font-black text-xl dark:text-heading-d">Read More <i class="fa-solid fa-arrow-right arrow bg-green p-[5px]"></i></a>
+              </button>
+            </div>
+          </div>
 
-                    <div class="rounded-2xl p-6 border border-solid border-[#E9E9E9] col-span-8 lg:col-span-2 -order-3 md:col-span-4">
-                        <img class="w-full" src="assets/img5.png" alt="">
-                    </div>
+          <div class="space-y-4 p-6 bg-white rounded-2xl md:flex gap-5 lg:flex-col dark:bg-transparent border border-solid border-[#E9E9E9]">
+            <div class>
+              <img class="w-full" src="assets/article2.png" alt />
+            </div>
+            <div class>
+              <div class="flex gap-4">
+                <p class="flex gap-2 paragraph text-paragraph-2"><img src="assets/calendar.svg" alt /> July14, 2024</p>
+                <p class="flex gap-2 paragraph text-paragraph-2"><img src="assets/account.svg" alt /> July14, 2024</p>
+              </div>
+              <h3 class="text-heading-2 dark:text-heading-d text-xl font-bold">How to choose the furniture right of your home.</h3>
+              <p class="paragraph text-left text-paragraph-2">The barn house captivates with its blend of rustic charm and modern.</p>
+              <button>
+                <a href="#" class="text-heading font-black text-xl dark:text-heading-d">Read More <i class="fa-solid fa-arrow-right arrow bg-green p-[5px]"></i></a>
+              </button>
+            </div>
+          </div>
 
-                    <div class="rounded-2xl p-6 border border-solid border-[#E9E9E9] col-span-8 lg:col-span-2 lg:hidden order-2 md:col-span-4">
-                        <img class="w-full" src="assets/img5.png" alt="">
-                    </div>
-                </div>
-            </section>
+          <div class="space-y-4 p-6 bg-white dark:bg-transparent border border-solid border-[#E9E9E9] rounded-2xl md:flex gap-5 lg:flex-col">
+            <div class>
+              <img class="w-full" src="assets/article3.png" alt />
+            </div>
+            <div class>
+              <div class="flex gap-4">
+                <p class="flex gap-2 paragraph text-paragraph-2"><img src="assets/calendar.svg" alt /> July14, 2024</p>
+                <p class="flex gap-2 paragraph text-paragraph-2"><img src="assets/account.svg" alt /> July14, 2024</p>
+              </div>
+              <h3 class="text-heading-2 dark:text-heading-d text-xl font-bold">How to choose the furniture right of your home.</h3>
+              <p class="paragraph text-left text-paragraph-2">The barn house captivates with its blend of rustic charm and modern.</p>
+              <button>
+                <a href="#" class="text-heading font-black text-xl dark:text-heading-d">Read More <i class="fa-solid fa-arrow-right arrow bg-green p-[5px]"></i></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <!-- ? Rinterio News section start hear -->
-            <section class="flex flex-col items-center bg-gray-200 space-y-8 dark:bg-transparent py-[6.25rem]">
-                <button><a href="#" class="button bg-green/50"><i class="fa-solid fa-arrow-right"></i> Rinterio News</a></button>
-                <h2 class="heading">Read Our Articles and News</h2>
-                <p class="paragraph">The barn house captivates with its blend of rustic charm and modern sophistication, <br class="max-sm:hidden"> featuring weathered wood, sleek metal accents.</p>
+      <!-- done Let’s Connect section start hear -->
+      <section class="flex flex-col items-center bg-connect space-y-8 py-[6.25rem] dark:bg-none">
+        <button>
+          <a href="#" class="button bg-green/50"><i class="fa-solid fa-arrow-right"></i> Let’s Connect</a>
+        </button>
+        <h2 class="heading">Let’s Discuss Next Project</h2>
+        <p class="paragraph">
+          The barn house captivates with its blend of rustic charm and modern sophistication, <br class="max-sm:hidden" />
+          featuring weathered wood, sleek metal accents.
+        </p>
 
-                <div class="gap-6 flex flex-col lg:flex-row w-11/12 mx-auto">
-                    <div class="space-y-4 p-6 bg-white rounded-2xl md:flex gap-5 lg:flex-col dark:bg-transparent border border-solid border-[#E9E9E9]">
-                        <div class="">
-                            <img class="w-full" src="assets/article1.png" alt="">
-                        </div>
-                        <div class="">
-                            <div class="flex gap-4">
-                            <p class="flex gap-2 paragraph text-paragraph-2 "><img src="assets/calendar.svg" alt=""> July14, 2024</p>
-                            <p class="flex gap-2 paragraph text-paragraph-2 "><img src="assets/account.svg" alt=""> July14, 2024</p>
-                            </div>
-                        <h3 class="text-heading-2 dark:text-heading-d text-xl font-bold">How to choose the furniture right  of your home.</h3>
-                        <p class="paragraph text-left text-paragraph-2">The barn house captivates with its blend of rustic charm and modern. </p>
-                        <button>
-                            <a href="#" class="text-heading font-black text-xl dark:text-heading-d">Read More <i class="fa-solid fa-arrow-right arrow bg-green p-[5px]"></i></a>
-                        </button>
-                    </div>
-                    </div>
+        <form action class="grid grid-cols-2 gap-6 w-11/12 md:w-auto">
+          <input class="input-text" type="text" placeholder="First Name*" required/>
+          <input class="input-text" type="text" placeholder="Last Name*" required/>
+          <input class="input-text" type="number" placeholder="Phone Number*" required/>
+          <input class="input-text" type="email" placeholder="Email Number*" required/>
+          <textarea class="textarea-text" placeholder="Write your message here" required></textarea>
+          <button type="submit" class="text-heading w-full font-black text-xl p-4 bg-green rounded-full col-span-2">
+            Send Mail <i class="fa-solid fa-arrow-right arrow bg-black text-white p-[5px]"></i>
+          </button>
+        </form>
+      </section>
+    </main>
 
-                    <div class="space-y-4 p-6 bg-white rounded-2xl md:flex gap-5 lg:flex-col dark:bg-transparent border border-solid border-[#E9E9E9]">
-                        <div class="">
-                            <img class="w-full" src="assets/article2.png" alt="">
-                        </div>
-                        <div class="">
-                            <div class="flex gap-4">
-                            <p class="flex gap-2 paragraph text-paragraph-2 "><img src="assets/calendar.svg" alt=""> July14, 2024</p>
-                            <p class="flex gap-2 paragraph text-paragraph-2 "><img src="assets/account.svg" alt=""> July14, 2024</p>
-                            </div>
-                        <h3 class="text-heading-2 dark:text-heading-d text-xl font-bold">How to choose the furniture right  of your home.</h3>
-                        <p class="paragraph text-left text-paragraph-2">The barn house captivates with its blend of rustic charm and modern. </p>
-                        <button>
-                            <a href="#" class="text-heading font-black text-xl dark:text-heading-d">Read More <i class="fa-solid fa-arrow-right arrow bg-green p-[5px]"></i></a>
-                        </button>
-                    </div>
-                    </div>
+    <!-- todo Footer section start hear -->
 
-                    <div class="space-y-4 p-6 bg-white dark:bg-transparent border border-solid border-[#E9E9E9] rounded-2xl md:flex gap-5 lg:flex-col">
-                        <div class="">
-                            <img class="w-full" src="assets/article3.png" alt="">
-                        </div>
-                        <div class="">
-                            <div class="flex gap-4">
-                            <p class="flex gap-2 paragraph text-paragraph-2 "><img src="assets/calendar.svg" alt=""> July14, 2024</p>
-                            <p class="flex gap-2 paragraph text-paragraph-2 "><img src="assets/account.svg" alt=""> July14, 2024</p>
-                            </div>
-                        <h3 class="text-heading-2 dark:text-heading-d text-xl font-bold">How to choose the furniture right  of your home.</h3>
-                        <p class="paragraph text-left text-paragraph-2">The barn house captivates with its blend of rustic charm and modern. </p>
-                        <button>
-                            <a href="#" class="text-heading font-black text-xl dark:text-heading-d">Read More <i class="fa-solid fa-arrow-right arrow bg-green p-[5px]"></i></a>
-                        </button>
-                    </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!-- todo Footer section start hear -->
-
-        <script src="script.js"></script>
-    </body>
+    <script src="script.js"></script>
+  </body>
 </html>
