@@ -6,11 +6,6 @@
     transform: rotate(-45deg)
 }
 
-/* ! tailwind css not support background img on github.io so I used vanilla css */
-.background {
-    background: url(../assets/bg.jpg);
-}
-
 @layer components {
     .display-none {
         @apply hidden;
@@ -29,11 +24,11 @@
     }
 
     .heading {
-        @apply text-heading text-center text-3xl !font-extrabold dark:text-heading-d;
+        @apply text-heading text-center text-3xl !font-extrabold;
     }
 
     .paragraph {
-        @apply text-paragraph-1 font-medium text-center dark:text-paragraph-d;
+        @apply text-paragraph-1 font-medium text-center;
     }
 
     .button {

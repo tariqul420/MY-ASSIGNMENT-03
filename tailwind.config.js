@@ -17,10 +17,9 @@ module.exports = {
         "aqua-marine": "#44deb7",
       },
       backgroundImage: {
-        connect: "url('/assets/bg.jpg')",
+        'contact-texture': "url('/assets/bg.jpg')",
       },
     },
   },
   plugins: [require("daisyui")],
-  darkMode: "class",
 };

@@ -1696,20 +1696,11 @@ html {
   color: rgb(33 33 33 / var(--tw-text-opacity));
 }
 
-.heading:is(.dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .paragraph {
   text-align: center;
   font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(73 73 73 / var(--tw-text-opacity));
-}
-
-.paragraph:is(.dark *) {
-  color: #ffffffa6;
 }
 
 .button {
@@ -2064,10 +2055,6 @@ html {
   flex: 1 1 0%;
 }
 
-.cursor-pointer {
-  cursor: pointer;
-}
-
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -2285,19 +2272,8 @@ html {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.from-\[\#0f1729\] {
-  --tw-gradient-from: #0f1729 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(15 23 41 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.via-\[\#15314c\] {
-  --tw-gradient-to: rgb(21 49 76 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), #15314c var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-
-.to-\[\#0f1729\] {
-  --tw-gradient-to: #0f1729 var(--tw-gradient-to-position);
+.bg-contact-texture {
+  background-image: url('/assets/bg.jpg');
 }
 
 .object-contain {
@@ -2474,12 +2450,6 @@ html {
   transform: rotate(-45deg)
 }
 
-/* ! tailwind css not support background img on github.io so I used vanilla css */
-
-.background {
-  background: url(../assets/bg.jpg);
-}
-
 .hover\:text-primary:hover {
   --tw-text-opacity: 1;
   color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity)));
@@ -2489,65 +2459,7 @@ html {
   text-decoration-line: underline;
 }
 
-.dark\:block:is(.dark *) {
-  display: block;
-}
-
-.dark\:hidden:is(.dark *) {
-  display: none;
-}
-
-.dark\:bg-\[\#15314c\]:is(.dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(21 49 76 / var(--tw-bg-opacity));
-}
-
-.dark\:bg-transparent:is(.dark *) {
-  background-color: transparent;
-}
-
-.dark\:bg-gradient-to-tr:is(.dark *) {
-  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
-}
-
-.dark\:bg-none:is(.dark *) {
-  background-image: none;
-}
-
-.dark\:text-black:is(.dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.dark\:text-heading:is(.dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(33 33 33 / var(--tw-text-opacity));
-}
-
-.dark\:text-heading-d:is(.dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.dark\:text-paragraph-1:is(.dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(73 73 73 / var(--tw-text-opacity));
-}
-
-.dark\:text-paragraph-2:is(.dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(115 115 115 / var(--tw-text-opacity));
-}
-
-.dark\:text-paragraph-d:is(.dark *) {
-  color: #ffffffa6;
-}
-
 @media not all and (min-width: 640px) {
-  .max-sm\:flex {
-    display: flex;
-  }
-
   .max-sm\:hidden {
     display: none;
   }
