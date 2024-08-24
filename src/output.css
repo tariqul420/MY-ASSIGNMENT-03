@@ -2272,8 +2272,12 @@ html {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'\.\/assets\/images\/banner\.svg\'\)\] {
+  background-image: url('./assets/images/banner.svg');
+}
+
 .bg-contact-texture {
-  background-image: url('/assets/bg.jpg');
+  background-image: url('../assets/bg.jpg');
 }
 
 .object-contain {

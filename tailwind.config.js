@@ -17,7 +17,7 @@ module.exports = {
         "aqua-marine": "#44deb7",
       },
       backgroundImage: {
-        'contact-texture': "url('/assets/bg.jpg')",
+        'contact-texture': "url('../assets/bg.jpg')",
       },
     },
   },
